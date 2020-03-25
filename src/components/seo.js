@@ -34,7 +34,11 @@ function SEO({ description, lang, meta, title }) {
       meta={[
         {
           property: `og:image`,
-          content: `https://weshipit.xyz/weshipit.gif`,
+          content: `https://weshipit.netlify.com/weshipit.gif`,
+        },
+        {
+          property: `og:url`,
+          content: `https://weshipit.netlify.com/weshipit.gif`,
         },
       ].concat(meta)}
     />
