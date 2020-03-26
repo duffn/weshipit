@@ -30,10 +30,6 @@ function SEO({ lang, meta, title }) {
           property: `og:image`,
           content: site.siteMetadata.gifUrl,
         },
-        // {
-        //   property: `og:url`,
-        //   content: site.siteMetadata.gifUrl,
-        // },
       ].concat(meta)}
     />
   )
