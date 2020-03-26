@@ -1,24 +1,12 @@
 import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import SEO from "./seo"
+import PropTypes from "prop-types"
 
 const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+  return <div>{children}</div>
+}
 
-  return (
-    <>
-      <SEO />
-      <img src="/weshipit.gif" alt="weshipit.xyz" />
-    </>
-  )
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
 }
 
 export default Layout
